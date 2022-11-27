@@ -26,7 +26,7 @@ public class FelineTest {
     }
 
     @Test
-    public void GetKittensWithParametersTest() {
+    public void getKittensWithParametersTest() {
         Feline feline = new Feline();
         Assert.assertEquals(100, feline.getKittens(100));
     }

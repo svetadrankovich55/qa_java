@@ -51,7 +51,7 @@ public class LionTest {
     @Test
     public void getFoodTest() throws Exception {
         Lion lion = new Lion(sex, feline);
-        Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"),lion.getFood());
     }
 
